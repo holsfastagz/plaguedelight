@@ -22,7 +22,7 @@ public class MedicineEvents {
 
         ItemStack consumed = event.getItem();
 
-        // Check if player ate your Antivirus item
+        // Check if player ate Antivirus
         if (consumed.getItem() == ModItems.ANTIVIRUS.get()) {
             player.addEffect(new MobEffectInstance(ModEffects.ANTIVIRUS.get(), 20*60, 0));
         }
@@ -37,7 +37,7 @@ public class MedicineEvents {
         if (event.getItem().getItem() == ModItems.PENICILLIN.get()) {
 
             // 50% chance
-            if (player.level().random.nextFloat() < 0.50F) {
+            if (player.level().random.nextFloat() < 1.0F) {
                 player.removeEffect(ModEffects.ANTHRAX.get());
                 player.removeEffect(ModEffects.DYSENTERY.get());
                 player.removeEffect(ModEffects.PLAGUE.get());
