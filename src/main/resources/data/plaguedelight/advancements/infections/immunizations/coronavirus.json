@@ -1,0 +1,21 @@
+{
+  "parent": "plaguedelight:infections/coronavirus",
+  "display": {
+    "icon": { "item": "plaguedelight:coronavirus_vaccine" },
+    "title": "Shot of Coronavirus...Immunity",
+    "description": "Obtain the coronavirus vaccine",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cooked_something": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "plaguedelight:coronavirus_vaccine" }
+        ]
+      }
+    }
+  }
+}

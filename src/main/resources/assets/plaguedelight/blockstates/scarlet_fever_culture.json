@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "doses=0": { "model": "plaguedelight:block/scarlet_fever_culture_0" },
+    "doses=1": { "model": "plaguedelight:block/scarlet_fever_culture_1" },
+    "doses=2": { "model": "plaguedelight:block/scarlet_fever_culture_2" },
+    "doses=3": { "model": "plaguedelight:block/scarlet_fever_culture_3" },
+    "doses=4": { "model": "plaguedelight:block/scarlet_fever_culture_4" }
+  }
+}
+

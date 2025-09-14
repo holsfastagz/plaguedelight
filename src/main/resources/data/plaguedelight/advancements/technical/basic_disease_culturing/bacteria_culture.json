@@ -1,0 +1,25 @@
+{
+  "parent": "plaguedelight:technical/petri_dish",
+  "display": {
+    "icon": { "item": "plaguedelight:anthrax_culture" },
+    "title": "Some Players' Only Culture",
+    "description": "Cook a bacterial culture",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cooked_something": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "plaguedelight:anthrax_culture" },
+          { "item": "plaguedelight:dysentery_culture" },
+          { "item": "plaguedelight:plague_culture" },
+          { "item": "plaguedelight:salmonella_culture" },
+          { "item": "plaguedelight:scarlet_fever_culture" }
+        ]
+      }
+    }
+  }
+}

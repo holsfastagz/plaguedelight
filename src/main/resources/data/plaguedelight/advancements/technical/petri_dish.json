@@ -1,0 +1,19 @@
+{
+  "parent": "plaguedelight:root",
+  "display": {
+    "icon": { "item": "plaguedelight:petri_dish" },
+    "title": "A Player of Culture",
+    "description": "Craft a petri dish",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+      "crafted_petri_dish": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "plaguedelight:petri_dish"
+      }
+    }
+  }
+}

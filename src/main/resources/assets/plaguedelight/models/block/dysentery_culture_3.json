@@ -1,0 +1,23 @@
+{
+  "textures": {
+    "particle": "plaguedelight:block/dysentery_culture_side",
+    "top": "plaguedelight:block/dysentery_culture_top_3",
+    "side": "plaguedelight:block/dysentery_culture_side",
+    "bottom": "plaguedelight:block/dysentery_culture_top_3"
+  },
+  "elements": [
+    {
+      "from": [ 1, 0, 1 ],
+      "to": [ 15, 2, 15 ],
+      "faces": {
+        "down":  { "texture": "#bottom", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#side" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}
+

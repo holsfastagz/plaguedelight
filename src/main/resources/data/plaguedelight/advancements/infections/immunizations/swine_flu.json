@@ -1,0 +1,21 @@
+{
+  "parent": "plaguedelight:infections/swine_flu",
+  "display": {
+    "icon": { "item": "plaguedelight:swine_flu_vaccine" },
+    "title": "Shot of Swine Flu...Immunity",
+    "description": "Obtain the swine_flu vaccine",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cooked_something": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "plaguedelight:swine_flu_vaccine" }
+        ]
+      }
+    }
+  }
+}

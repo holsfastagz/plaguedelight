@@ -1,0 +1,23 @@
+{
+  "textures": {
+    "particle": "plaguedelight:block/rabies_culture_side",
+    "top": "plaguedelight:block/rabies_culture_top_0",
+    "side": "plaguedelight:block/rabies_culture_side",
+    "bottom": "plaguedelight:block/rabies_culture_top_0"
+  },
+  "elements": [
+    {
+      "from": [ 1, 0, 1 ],
+      "to": [ 15, 2, 15 ],
+      "faces": {
+        "down":  { "texture": "#bottom", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#side" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}
+

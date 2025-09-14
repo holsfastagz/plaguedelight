@@ -1,0 +1,21 @@
+{
+  "parent": "plaguedelight:infections/dysentery",
+  "display": {
+    "icon": { "item": "plaguedelight:dysentery_vaccine" },
+    "title": "Shot of Dysentery...Immunity",
+    "description": "Obtain the dysentery vaccine",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cooked_something": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "plaguedelight:dysentery_vaccine" }
+        ]
+      }
+    }
+  }
+}

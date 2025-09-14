@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    " P ",
+    " S "
+  ],
+  "key": {
+    "A": { "item": "minecraft:arrow" },
+    "P": { "item": "minecraft:potion" },
+    "S": { "item": "minecraft:piston" }
+  },
+  "result": {
+    "item": "plaguedelight:syringe",
+    "count": 1
+  }
+}

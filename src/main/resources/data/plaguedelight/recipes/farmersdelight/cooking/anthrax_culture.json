@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 8400,
+  "experience": 2.0,
+  "container": {
+    "item": "minecraft:petri_dish"
+  },
+  "ingredients": [
+    {
+      "item": "plaguedelight:agar"
+    },
+    {
+      "item": "plaguedelight:anthrax_sample"
+    }
+  ],
+  "result": {
+    "item": "plaguedelight:anthrax_culture"
+  }
+}

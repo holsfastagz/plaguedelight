@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "container": {
+    "item": "minecraft:glass_bottle"
+  },
+  "ingredients": [
+      [
+          {
+            "item": "minecraft:water_bucket"
+          },
+          {
+            "item": "minecraft:potion"
+          }
+      ],
+    {
+      "item": "plaguedelight:jungle_bark"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "plaguedelight:tonic"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "textures": {
+    "particle": "plaguedelight:block/cell_line_side",
+    "bottom": "plaguedelight:block/cell_line_top",
+    "top": "plaguedelight:block/cell_line_top",
+    "side": "plaguedelight:block/cell_line_side"
+  },
+  "elements": [
+    {
+      "from": [ 1, 0, 1 ],
+      "to": [ 15, 2, 15 ],
+      "faces": {
+        "down":  { "texture": "#bottom", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#side" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}
+

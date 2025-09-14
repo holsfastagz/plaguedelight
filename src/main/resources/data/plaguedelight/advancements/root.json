@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "plaguedelight:syringe"
+    },
+    "title": "Plague Delight",
+    "description": "Track your health progress",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "immunizations_root": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

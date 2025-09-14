@@ -1,0 +1,33 @@
+package com.holsfastagz.plaguedelight.item;
+
+import com.holsfastagz.plaguedelight.registry.ModEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+
+public class AnthraxVaccineItem extends SyringeItem {
+
+    public AnthraxVaccineItem(Properties properties) {
+        super(properties);
+    }
+
+    @Override
+    protected void inject(LivingEntity target, ItemStack stack, Level level) {
+        // Remove Anthrax if the player has it
+        if (target.hasEffect(ModEffects.ANTHRAX.get())) {
+            target.removeEffect(ModEffects.ANTHRAX.get());
+        }
+
+        // Apply "Vaccinated" effect for 2:30 (3000 ticks)
+        target.addEffect(new MobEffectInstance(
+                ModEffects.VACCINATED.get(), // you'll register this in ModEffects
+                3000, // 2 minutes 30 seconds
+                0,    // amplifier (level 1)
+                false,
+                true, // show particles
+                true  // show in HUD
+        ));
+    }
+}
+

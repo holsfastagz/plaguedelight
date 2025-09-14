@@ -1,0 +1,24 @@
+{
+  "parent": "plaguedelight:technical/cell_line",
+  "display": {
+    "icon": { "item": "plaguedelight:rabies_culture" },
+    "title": "Gone Viral",
+    "description": "Cook a viral culture",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cooked_something": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "plaguedelight:coronavirus_culture" },
+          { "item": "plaguedelight:rabies_culture" },
+          { "item": "plaguedelight:smallpox_culture" },
+          { "item": "plaguedelight:swine_flu_culture" }
+        ]
+      }
+    }
+  }
+}

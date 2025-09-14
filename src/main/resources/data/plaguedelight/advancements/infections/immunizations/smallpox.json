@@ -1,0 +1,21 @@
+{
+  "parent": "plaguedelight:infections/smallpox",
+  "display": {
+    "icon": { "item": "plaguedelight:smallpox_vaccine" },
+    "title": "Shot of Smallpox...Immunity",
+    "description": "Obtain the smallpox vaccine",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cooked_something": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "plaguedelight:smallpox_vaccine" }
+        ]
+      }
+    }
+  }
+}

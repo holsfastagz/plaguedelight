@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GAG",
+    "GGG"
+  ],
+  "key": {
+    "A": { "item": "plaguedelight:agar" },
+    "G": { "item": "minecraft:glass" }
+  },
+  "result": {
+    "item": "plaguedelight:petri_dish",
+    "count": 1
+  }
+}
+

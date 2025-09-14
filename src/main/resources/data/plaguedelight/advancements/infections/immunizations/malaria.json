@@ -1,0 +1,21 @@
+{
+  "parent": "plaguedelight:infections/malaria",
+  "display": {
+    "icon": { "item": "plaguedelight:malaria_vaccine" },
+    "title": "Shot of Malaria...Immunity",
+    "description": "Obtain the malaria vaccine",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cooked_something": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "plaguedelight:malaria_vaccine" }
+        ]
+      }
+    }
+  }
+}

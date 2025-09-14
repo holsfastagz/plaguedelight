@@ -1,0 +1,21 @@
+{
+  "parent": "plaguedelight:infections/plague",
+  "display": {
+    "icon": { "item": "plaguedelight:plague_vaccine" },
+    "title": "Shot of Plague...Immunity",
+    "description": "Obtain the plague vaccine",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cooked_something": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "plaguedelight:plague_vaccine" }
+        ]
+      }
+    }
+  }
+}

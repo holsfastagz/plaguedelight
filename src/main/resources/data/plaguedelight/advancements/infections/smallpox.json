@@ -1,0 +1,21 @@
+{
+  "parent": "plaguedelight:root",
+  "display": {
+    "icon": { "item": "plaguedelight:smallpox" },
+    "title": "The Worst Disease in History",
+    "description": "Come down with smallpox",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "disease_effect": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "plaguedelight:smallpox": {}
+        }
+      }
+    }
+  }
+}

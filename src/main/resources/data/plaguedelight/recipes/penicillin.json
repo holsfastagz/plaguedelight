@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SPS",
+    "SSS"
+  ],
+  "key": {
+    "P": { "item": "plaguedelight:penicillium_bottle" },
+    "S": { "item": "minecraft:sugar" }
+  },
+  "result": {
+    "item": "plaguedelight:penicillin",
+    "count": 1
+  }
+}
+
