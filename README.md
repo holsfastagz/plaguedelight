@@ -11,7 +11,7 @@ stay healthy.
 Plague Delight is still in the pre-release stage, so I plan to add way more
 functionality! Stay tuned.
 
-## Latest Release (v1.20.1-0.1.0 2025-09-)
+## Latest Release (v1.20.1-0.1.0 compiled 2025-09-)
 
 Forge:
 
@@ -45,9 +45,9 @@ Advancements guide you through the mod.
 
 ## Dependencies
 
-- Minecraft v1.20.1
-- Forge
-- Farmer's Delight v1.3.0 or above
+- [Minecraft](https://minecraft.net) v1.20.1
+- [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html) v1.20.1-47.4.*
+- [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) v1.3.0 or above
 
 ## Future Plans
 
