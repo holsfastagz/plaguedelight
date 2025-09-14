@@ -42,6 +42,9 @@ public class plaguedelight {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.PETRI_DISH_ITEM.get());
                         output.accept(ModItems.SYRINGE.get());
+                        output.accept(ModItems.PENICILLIN.get());
+                        output.accept(ModItems.INFERNICILLIN.get());
+                        output.accept(ModItems.ANTIVIRUS.get());
                         output.accept(ModItems.CELL_LINE_ITEM.get());
                         output.accept(ModItems.JUNGLE_BARK.get());
                         output.accept(ModItems.QUININE.get());
