@@ -1,0 +1,21 @@
+{
+  "parent": "plaguedelight:root",
+  "display": {
+    "icon": { "item": "plaguedelight:penicillin" },
+    "title": "Happy Accident",
+    "description": "Craft the antibiotic penicillin",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cooked_something": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "plaguedelight:penicillin" }
+        ]
+      }
+    }
+  }
+}
