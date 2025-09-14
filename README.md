@@ -88,6 +88,4 @@ Buy me a coffee: https://buymeacoffee.com/z8zn9yhpxwq
 
 Developer: holsfastagz
 
-Textures: holsfastagz & Ren Nova
-
 Acknowledgements: Farmer's Delight development team
