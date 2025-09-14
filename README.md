@@ -11,7 +11,7 @@ stay healthy.
 Plague Delight is still in the pre-release stage, so I plan to add way more
 functionality! Stay tuned.
 
-## Latest Release
+## Latest Release (v1.20.1-0.1.0 2025-09-)
 
 Forge:
 
