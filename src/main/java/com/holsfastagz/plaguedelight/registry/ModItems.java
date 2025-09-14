@@ -46,7 +46,7 @@ public class ModItems {
 
     // Penicillium bottle - a shroomy antibiotic precursor
     public static final RegistryObject<Item> PENICILLIUM_BOTTLE =
-            ITEMS.register("penicillium_bottle", () -> new Item(new Item.Properties()));
+            ITEMS.register("penicillium_bottle", () -> new Item(new Item.Properties().stacksTo(8)));
 
     // Quinine - it can treat malaria!
     public static final RegistryObject<Item> QUININE =
@@ -59,43 +59,43 @@ public class ModItems {
 
     // Anthrax Sample
     public static final RegistryObject<Item> ANTHRAX_SAMPLE =
-            ITEMS.register("anthrax_sample", () -> new Item(new Item.Properties()));
+            ITEMS.register("anthrax_sample", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Coronavirus Sample
     public static final RegistryObject<Item> CORONAVIRUS_SAMPLE =
-            ITEMS.register("coronavirus_sample", () -> new Item(new Item.Properties()));
+            ITEMS.register("coronavirus_sample", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Dysentery Sample
     public static final RegistryObject<Item> DYSENTERY_SAMPLE =
-            ITEMS.register("dysentery_sample", () -> new Item(new Item.Properties()));
+            ITEMS.register("dysentery_sample", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Malaria Sample
     public static final RegistryObject<Item> MALARIA_SAMPLE =
-            ITEMS.register("malaria_sample", () -> new Item(new Item.Properties()));
+            ITEMS.register("malaria_sample", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Rabies Sample
     public static final RegistryObject<Item> RABIES_SAMPLE =
-            ITEMS.register("rabies_sample", () -> new Item(new Item.Properties()));
+            ITEMS.register("rabies_sample", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Plague Sample
     public static final RegistryObject<Item> PLAGUE_SAMPLE =
-            ITEMS.register("plague_sample", () -> new Item(new Item.Properties()));
+            ITEMS.register("plague_sample", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Salmonella Sample
     public static final RegistryObject<Item> SALMONELLA_SAMPLE =
-            ITEMS.register("salmonella_sample", () -> new Item(new Item.Properties()));
+            ITEMS.register("salmonella_sample", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Scarlet Fever Sample
     public static final RegistryObject<Item> SCARLET_FEVER_SAMPLE =
-            ITEMS.register("scarlet_fever_sample", () -> new Item(new Item.Properties()));
+            ITEMS.register("scarlet_fever_sample", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Smallpox Sample
     public static final RegistryObject<Item> SMALLPOX_SAMPLE =
-            ITEMS.register("smallpox_sample", () -> new Item(new Item.Properties()));
+            ITEMS.register("smallpox_sample", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Smallpox Sample
     public static final RegistryObject<Item> SWINE_FLU_SAMPLE =
-            ITEMS.register("swine_flu_sample", () -> new Item(new Item.Properties()));
+            ITEMS.register("swine_flu_sample", () -> new Item(new Item.Properties().stacksTo(1)));
 
 
     //   -------------------
@@ -104,69 +104,90 @@ public class ModItems {
 
     // Syringe
     public static final RegistryObject<Item> SYRINGE =
-            ITEMS.register("syringe", () -> new Item(new Item.Properties()));
+            ITEMS.register("syringe", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Anthrax Vaccine
     public static final RegistryObject<Item> ANTHRAX_VACCINE =
-            ITEMS.register("anthrax_vaccine", () -> new Item(new Item.Properties()));
+            ITEMS.register("anthrax_vaccine", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Coronavirus Vaccine
     public static final RegistryObject<Item> CORONAVIRUS_VACCINE =
-           ITEMS.register("coronavirus_vaccine", () -> new Item(new Item.Properties()));
+           ITEMS.register("coronavirus_vaccine", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Dysentery Vaccine
     public static final RegistryObject<Item> DYSENTERY_VACCINE =
-           ITEMS.register("dysentery_vaccine", () -> new Item(new Item.Properties()));
+           ITEMS.register("dysentery_vaccine", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Malaria Vaccine
     public static final RegistryObject<Item> MALARIA_VACCINE =
-           ITEMS.register("malaria_vaccine", () -> new Item(new Item.Properties()));
+           ITEMS.register("malaria_vaccine", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Plague Vaccine
     public static final RegistryObject<Item> PLAGUE_VACCINE =
-           ITEMS.register("plague_vaccine", () -> new Item(new Item.Properties()));
+           ITEMS.register("plague_vaccine", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Rabies Prophylaxis 
     public static final RegistryObject<Item> RABIES_PROPHYLAXIS =
-           ITEMS.register("rabies_prophylaxis", () -> new Item(new Item.Properties()));
+           ITEMS.register("rabies_prophylaxis", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Salmonella Vaccine
     public static final RegistryObject<Item> SALMONELLA_VACCINE =
-           ITEMS.register("salmonella_vaccine", () -> new Item(new Item.Properties()));
+           ITEMS.register("salmonella_vaccine", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Scarlet Fever Vaccine
     public static final RegistryObject<Item> SCARLET_FEVER_VACCINE =
-           ITEMS.register("scarlet_fever_vaccine", () -> new Item(new Item.Properties()));
+           ITEMS.register("scarlet_fever_vaccine", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Smallpox Vaccine
     public static final RegistryObject<Item> SMALLPOX_VACCINE =
-           ITEMS.register("smallpox_vaccine", () -> new Item(new Item.Properties()));
+           ITEMS.register("smallpox_vaccine", () -> new Item(new Item.Properties().stacksTo(1)));
 
     // Swine Flu Vaccine
     public static final RegistryObject<Item> SWINE_FLU_VACCINE =
-           ITEMS.register("swine_flu_vaccine", () -> new Item(new Item.Properties()));
-
+           ITEMS.register("swine_flu_vaccine", () -> new Item(new Item.Properties().stacksTo(1)));
 
     //   ---------
     //   MEDICINES
     //   ---------
 
     // Antivirus - not Norton
-    public static final RegistryObject<Item>  ANTIVIRUS =
-            ITEMS.register("antivirus", () -> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> ANTIVIRUS =
+            .stacksTo(8)
+            ITEMS.register("antivirus", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(0)
+                            .saturationMod(0.0f)
+                            .alwaysEat()
+                            //.effect(() -> new MobEffectInstance(ModEffects.ANTIVIRUS, 20*60, 1), 0)
+                            .build()
+                    )));
+    
     // Infernicillin - a hellish antibiotic
     public static final RegistryObject<Item> INFERNICILLIN =
-            ITEMS.register("infernicillin", () -> new Item(new Item.Properties()));
-
+            ITEMS.register("infernicillin", () -> new Item(new Item.Properties()
+                    .stacksTo(8)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(0)
+                            .saturationMod(0.0f)
+                            .alwaysEat()
+                            .build()
+                    )));
+    
     // Penicillin - a shroomy antibiotic
     public static final RegistryObject<Item> PENICILLIN =
-            ITEMS.register("penicillin", () -> new Item(new Item.Properties()));
+            .stacksTo(8)
+            ITEMS.register("penicillin", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(0)
+                            .saturationMod(0.0f)
+                            .alwaysEat()
+                            .build()
+                    )));
 
     // Tonic - where's the gin?
     public static final RegistryObject<Item> TONIC = ITEMS.register("tonic",
         () -> new Item(new Item.Properties()
-            .stacksTo(16)
+            .stacksTo(8)
             .food(new FoodProperties.Builder()
                 .nutrition(1)
                 .saturationMod(0.2f)
@@ -255,34 +276,34 @@ public class ModItems {
     //   --------------------------------------------------------
     
     public static final RegistryObject<Item> ANTHRAX =
-            ITEMS.register("anthrax", () -> new Item(new Item.Properties()));
+            ITEMS.register("anthrax", () -> new Item(new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> CORONAVIRUS =
-            ITEMS.register("coronavirus", () -> new Item(new Item.Properties()));
+            ITEMS.register("coronavirus", () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> DYSENTERY =
-            ITEMS.register("dysentery", () -> new Item(new Item.Properties()));
+            ITEMS.register("dysentery", () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> MALARIA =
-            ITEMS.register("malaria", () -> new Item(new Item.Properties()));
+            ITEMS.register("malaria", () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> PLAGUE =
-            ITEMS.register("plague", () -> new Item(new Item.Properties()));
+            ITEMS.register("plague", () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> RABIES =
-            ITEMS.register("rabies", () -> new Item(new Item.Properties()));
+            ITEMS.register("rabies", () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> SALMONELLA =
-            ITEMS.register("salmonella", () -> new Item(new Item.Properties()));
+            ITEMS.register("salmonella", () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> SCARLET_FEVER =
-            ITEMS.register("scarlet_fever", () -> new Item(new Item.Properties()));
+            ITEMS.register("scarlet_fever", () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> SMALLPOX =
-            ITEMS.register("smallpox", () -> new Item(new Item.Properties()));
+            ITEMS.register("smallpox", () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> SWINE_FLU =
-            ITEMS.register("swine_flu", () -> new Item(new Item.Properties()));
+            ITEMS.register("swine_flu", () -> new Item(new Item.Properties().stacksTo(1)));
 
 }
 
