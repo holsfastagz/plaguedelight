@@ -41,7 +41,7 @@ Adds disease culturing.
 
 Adds vaccines.
 
-JEI integration.
+Advancements guide you through the mod.
 
 ## Dependencies
 
@@ -63,7 +63,7 @@ JEI integration.
 - Disease evolution
 - Custom cooking interfaces
 - Tough As Nails, Alex's Mobs, Serene Seasons, and Corpse compatability
-- More translations
+- Translations
 
 ## Bugs and Issues
 
