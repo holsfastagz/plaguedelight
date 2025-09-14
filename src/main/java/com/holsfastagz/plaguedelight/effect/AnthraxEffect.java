@@ -31,7 +31,7 @@ public class AnthraxEffect extends MobEffect {
 
             // Vanilla weakness effect
             entity.addEffect(new MobEffectInstance(
-                    MobEffects.HUNGER,
+                    MobEffects.WEAKNESS,
                     6000,                // 5 minutes
                     0,           // effect strength
                     false,               // ambient
