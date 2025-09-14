@@ -152,8 +152,8 @@ public class ModItems {
 
     // Antivirus - not Norton
     public static final RegistryObject<Item> ANTIVIRUS =
-            .stacksTo(8)
             ITEMS.register("antivirus", () -> new Item(new Item.Properties()
+                    .stacksTo(8)
                     .food(new FoodProperties.Builder()
                             .nutrition(0)
                             .saturationMod(0.0f)
@@ -175,8 +175,8 @@ public class ModItems {
     
     // Penicillin - a shroomy antibiotic
     public static final RegistryObject<Item> PENICILLIN =
-            .stacksTo(8)
             ITEMS.register("penicillin", () -> new Item(new Item.Properties()
+                    .stacksTo(8)
                     .food(new FoodProperties.Builder()
                             .nutrition(0)
                             .saturationMod(0.0f)
