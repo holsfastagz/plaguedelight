@@ -36,8 +36,8 @@ public class MedicineEvents {
         // Check penicillin 
         if (event.getItem().getItem() == ModItems.PENICILLIN.get()) {
 
-            // 20% chance
-            if (player.level().random.nextFloat() < 0.20F) {
+            // 50% chance
+            if (player.level().random.nextFloat() < 0.50F) {
                 player.removeEffect(ModEffects.ANTHRAX.get());
                 player.removeEffect(ModEffects.DYSENTERY.get());
                 player.removeEffect(ModEffects.PLAGUE.get());
@@ -55,8 +55,8 @@ public class MedicineEvents {
         // Check infernicillin 
         if (event.getItem().getItem() == ModItems.INFERNICILLIN.get()) {
 
-            // 40% chance
-            if (player.level().random.nextFloat() < 0.40F) {
+            // 75% chance
+            if (player.level().random.nextFloat() < 0.75F) {
                 player.removeEffect(ModEffects.ANTHRAX.get());
                 player.removeEffect(ModEffects.DYSENTERY.get());
                 player.removeEffect(ModEffects.PLAGUE.get());
