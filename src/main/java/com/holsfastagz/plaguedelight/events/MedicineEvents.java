@@ -15,7 +15,18 @@ import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 @Mod.EventBusSubscriber(modid = "plaguedelight")
 public class MedicineEvents {
 
-    // Note that antivirus is an effect rather than an event
+    // Confer antivirus effect for 1 minute when antivirus is consumed
+    @SubscribeEvent
+    public static void onAntivirusConsumed(LivingEntityUseItemEvent.Finish event) {
+        if (!(event.getEntity() instanceof Player player)) return;
+
+        ItemStack consumed = event.getItem();
+
+        // Check if player ate your Antivirus item
+        if (consumed.getItem() == ModItems.ANTIVIRUS.get()) {
+            player.addEffect(new MobEffectInstance(ModEffects.ANTIVIRUS.get(), 20*60, 0));
+        }
+    }
 
     // Cure bacterial infections with penicillin (except scarlet fever)
     @SubscribeEvent
