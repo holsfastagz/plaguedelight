@@ -36,8 +36,11 @@ public class MedicineEvents {
         // Check penicillin 
         if (event.getItem().getItem() == ModItems.PENICILLIN.get()) {
 
+            System.out.println("Penicillin consumed!");
+
             // 50% chance
             if (player.level().random.nextFloat() < 5.0F) {
+                System.out.println("Penicillin success!");
                 player.removeEffect(ModEffects.ANTHRAX.get());
                 player.removeEffect(ModEffects.DYSENTERY.get());
                 player.removeEffect(ModEffects.PLAGUE.get());
