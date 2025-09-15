@@ -28,45 +28,57 @@ public class MedicineEvents {
         }
     }
 
-    // Cure bacterial infections with penicillin (except scarlet fever)
     @SubscribeEvent
     public static void onPenicillinConsumed(LivingEntityUseItemEvent.Finish event) {
         if (!(event.getEntity() instanceof Player player)) return;
     
-        // Check penicillin 
         if (event.getItem().getItem() == ModItems.PENICILLIN.get()) {
-
             System.out.println("Penicillin consumed!");
-
-            // 50% chance
-            if (player.level().random.nextFloat() < 5.0F) {
+    
+            // 25% chance
+            if (player.level().random.nextFloat() < 0.25F) {
                 System.out.println("Penicillin success!");
+    
                 player.removeEffect(ModEffects.ANTHRAX.get());
                 player.removeEffect(ModEffects.DYSENTERY.get());
                 player.removeEffect(ModEffects.PLAGUE.get());
                 player.removeEffect(ModEffects.SALMONELLA.get());
+    
+                // --- Force client sync for all removed effects ---
+                if (player instanceof ServerPlayer serverPlayer) {
+                    serverPlayer.onEffectRemoved(ModEffects.ANTHRAX.get());
+                    serverPlayer.onEffectRemoved(ModEffects.DYSENTERY.get());
+                    serverPlayer.onEffectRemoved(ModEffects.PLAGUE.get());
+                    serverPlayer.onEffectRemoved(ModEffects.SALMONELLA.get());
+                }
             }
-            
         }
     }
 
-    // Cure bacterial infections with infernicillin
     @SubscribeEvent
     public static void onInfernicillinConsumed(LivingEntityUseItemEvent.Finish event) {
         if (!(event.getEntity() instanceof Player player)) return;
     
-        // Check infernicillin 
         if (event.getItem().getItem() == ModItems.INFERNICILLIN.get()) {
-
-            // 75% chance
-            if (player.level().random.nextFloat() < 0.75F) {
+            System.out.println("Infernicillin consumed!");
+    
+            // 50% chance 
+            if (player.level().random.nextFloat() < 0.50F) {
+                System.out.println("Infernicillin success!");
+    
                 player.removeEffect(ModEffects.ANTHRAX.get());
                 player.removeEffect(ModEffects.DYSENTERY.get());
                 player.removeEffect(ModEffects.PLAGUE.get());
                 player.removeEffect(ModEffects.SALMONELLA.get());
-                player.removeEffect(ModEffects.MALARIA.get());
+    
+                // --- Force client sync for all removed effects ---
+                if (player instanceof ServerPlayer serverPlayer) {
+                    serverPlayer.onEffectRemoved(ModEffects.ANTHRAX.get());
+                    serverPlayer.onEffectRemoved(ModEffects.DYSENTERY.get());
+                    serverPlayer.onEffectRemoved(ModEffects.PLAGUE.get());
+                    serverPlayer.onEffectRemoved(ModEffects.SALMONELLA.get());
+                }
             }
-            
         }
     }
 
