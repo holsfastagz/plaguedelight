@@ -37,7 +37,7 @@ public class MedicineEvents {
         if (event.getItem().getItem() == ModItems.PENICILLIN.get()) {
 
             // 50% chance
-            if (player.level().random.nextFloat() < 1.0F) {
+            if (player.level().random.nextFloat() < 5.0F) {
                 player.removeEffect(ModEffects.ANTHRAX.get());
                 player.removeEffect(ModEffects.DYSENTERY.get());
                 player.removeEffect(ModEffects.PLAGUE.get());
