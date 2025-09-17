@@ -2,7 +2,7 @@
   "parent": "plaguedelight:root",
   "display": {
     "icon": { "item": "plaguedelight:salmonella" },
-    "title": "An Ass Killer",
+    "title": "An Ahh Killer",
     "description": "Come down with salmonellosis",
     "frame": "task",
     "show_toast": true,
