@@ -31,7 +31,7 @@ public class MedicineEvents {
         ItemStack consumed = event.getItem();
 
         if (consumed.getItem() == ModItems.PENICILLIN.get()) {
-            player.addEffect(new net.minecraft.world.effectMobEffectInstance(
+            player.addEffect(new net.minecraft.world.effect.MobEffectInstance(
                 ModEffects.PENICILLIN.get(), 20*60*20, 0));
         }
     }
@@ -43,7 +43,7 @@ public class MedicineEvents {
         ItemStack consumed = event.getItem();
 
         if (consumed.getItem() == ModItems.INFERNICILLIN.get()) {
-            player.addEffect(new net.minecraft.world.effectMobEffectInstance(
+            player.addEffect(new net.minecraft.world.effect.MobEffectInstance(
                 ModEffects.INFERNICILLIN.get(), 20*60*30, 0));
         }
     }
@@ -55,7 +55,7 @@ public class MedicineEvents {
         ItemStack consumed = event.getItem();
 
         if (consumed.getItem() == ModItems.TONIC.get()) {
-            player.addEffect(new net.minecraft.world.effectMobEffectInstance(
+            player.addEffect(new net.minecraft.world.effect.MobEffectInstance(
                 ModEffects.TONIC.get(), 20*60*5, 0));
         }
     }
