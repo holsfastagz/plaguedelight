@@ -2,6 +2,7 @@ package com.holsfastagz.plaguedelight.events;
 
 import com.holsfastagz.plaguedelight.registry.ModEffects;
 import com.holsfastagz.plaguedelight.registry.ModItems;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
