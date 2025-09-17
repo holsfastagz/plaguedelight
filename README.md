@@ -1,5 +1,7 @@
 # Plague Delight
 
+<img src="src/main/resources/plaguedelight_logo.png" width="50%">
+
 Plague Delight is an addon mod for Farmer's Delight based around disease and
 medicine!
 
@@ -11,7 +13,7 @@ stay healthy.
 Plague Delight is still in the pre-release stage, so I plan to add way more
 functionality! Stay tuned.
 
-## Latest Release (v1.20.1-0.1.0 compiled 2025-09-)
+## Latest Release
 
 Forge:
 
