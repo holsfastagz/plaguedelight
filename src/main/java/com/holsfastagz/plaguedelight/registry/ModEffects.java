@@ -13,6 +13,8 @@ import com.holsfastagz.plaguedelight.effect.ScarletFeverEffect;
 import com.holsfastagz.plaguedelight.effect.SmallpoxEffect;
 import com.holsfastagz.plaguedelight.effect.SwineFluEffect;
 import com.holsfastagz.plaguedelight.effect.VaccinatedEffect;
+import com.holsfastagz.plaguedelight.effect.PenicillinEffect;
+import com.holsfastagz.plaguedelight.effect.InfernicillinEffect;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -30,6 +32,15 @@ public class ModEffects {
     public static final RegistryObject<MobEffect> ANTIVIRUS =
             EFFECTS.register("antivirus", AntivirusEffect::new);
 
+    // Penicillin effect
+    public static final RegistryObject<MobEffect> PENICILLIN =
+            EFFECTS.register("penicillin", PenicillinEffect::new);
+
+    // Infernicillin effect
+    public static final RegistryObject<MobEffect> INFERNICILLIN =
+            EFFECTS.register("infernicillin", InfernicillinEffect::new);
+
+    // Vaccinated effect
     public static final RegistryObject<MobEffect> VACCINATED =
             EFFECTS.register("vaccinated", VaccinatedEffect::new);
 
