@@ -12,7 +12,7 @@ public class AnthraxEffect extends MobEffect {
     }
 
     @Override
-    public void applyEffectTick(LivingEntity entity, int amplifier) {
+    public void applyEffectTick0(LivingEntity entity, int amplifier) {
          if (!entity.level().isClientSide) {
              System.out.println("AnthraxEffect ticked for: " + entity.getName().getString());
              //...rest of your code
