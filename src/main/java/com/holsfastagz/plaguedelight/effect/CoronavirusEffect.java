@@ -31,8 +31,8 @@ public class CoronavirusEffect extends MobEffect {
             if (!entity.hasEffect(MobEffects.WEAKNESS)) {
                 entity.addEffect(new MobEffectInstance(
                         MobEffects.WEAKNESS,
-                        220,   // ~11 seconds
-                        0,     // Weakness I
+                        20*10,   // 10 seconds
+                        0,       // Weakness I
                         false,
                         true,
                         false
@@ -43,8 +43,8 @@ public class CoronavirusEffect extends MobEffect {
             if (!entity.hasEffect(MobEffects.DIG_SLOWDOWN)) {
                 entity.addEffect(new MobEffectInstance(
                         MobEffects.DIG_SLOWDOWN,
-                        220,   // ~11 seconds
-                        0,     // Mining Fatigue I
+                        20*10,   // 10 seconds
+                        0,       // Mining Fatigue I
                         false,
                         true,
                         false 

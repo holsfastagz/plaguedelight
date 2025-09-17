@@ -30,7 +30,7 @@ public class AnthraxEffect extends MobEffect {
             // Vanilla hunger effect
             entity.addEffect(new MobEffectInstance(
                     MobEffects.HUNGER,
-                    6000,                // 5 minutes
+                    20*10,               // 10 seconds 
                     amplifier,           // effect strength
                     false,               // ambient
                     false,               // show particles
@@ -40,8 +40,8 @@ public class AnthraxEffect extends MobEffect {
             // Vanilla weakness effect
             entity.addEffect(new MobEffectInstance(
                     MobEffects.WEAKNESS,
-                    6000,                // 5 minutes
-                    0,           // effect strength
+                    20*10,                // 10 seconds
+                    amplifier,           // effect strength
                     false,               // ambient
                     false,               // show particles
                     false                // show icon
