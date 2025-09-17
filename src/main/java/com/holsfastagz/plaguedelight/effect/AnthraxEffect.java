@@ -16,7 +16,11 @@ public class AnthraxEffect extends MobEffect {
     public void applyEffectTick(LivingEntity entity, int amplifier) {
         if (!entity.level().isClientSide) {
 
-            System.out.println("AnthraxEffect ticked for: " + entity.getName().getString());
+            // If penicillin or infernicillin effect is active, skip harmful logic
+            if (entity.hasEffect(ModEffects.PENICILLIN.get())
+                || entity.hasEffect(ModEffects.INFERNICILLIN.get())) {
+                return;
+            }
 
             // Deal half a heart of damage per tick
             entity.hurt(entity.damageSources().magic(), 1.0F);

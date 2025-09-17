@@ -19,6 +19,12 @@ public class PlagueEffect extends MobEffect {
         if (!(entity.level() instanceof ServerLevel serverLevel)) return;
         if (!entity.isAlive()) return; // prevent crash when effect is removed on death
 
+        // If penicillin or infernicillin effect is active, skip harmful logic
+        if (entity.hasEffect(ModEffects.PENICILLIN.get())
+            || entity.hasEffect(ModEffects.INFERNICILLIN.get())) {
+            return;
+        }
+
         // Deal plague damage
         entity.hurt(ModDamageTypes.plague(serverLevel), 1.0F);
 

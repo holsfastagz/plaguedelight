@@ -16,6 +16,11 @@ public class MalariaEffect extends MobEffect {
     public void applyEffectTick(LivingEntity entity, int amplifier) {
         if (!entity.level().isClientSide) {
 
+            // If tonic effect is active, skip harmful logic
+            if (entity.hasEffect(ModEffects.TONIC.get())) {
+                    return;
+            } 
+    
             // Deal half a heart of damage (time interval defined below)
             entity.hurt(entity.damageSources().magic(), 1.0F);
 

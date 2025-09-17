@@ -16,6 +16,12 @@ public class ScarletFeverEffect extends MobEffect {
     public void applyEffectTick(LivingEntity entity, int amplifier) {
         if (!entity.level().isClientSide) {
 
+
+            // If infernicillin effect is active, skip harmful logic
+            if (entity.hasEffect(ModEffects.INFERNICILLIN.get())) {
+                return;
+            }
+
             // Deal half a heart of damage per tick
             entity.hurt(entity.damageSources().magic(), 1.0F);
 
