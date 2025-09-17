@@ -11,37 +11,33 @@ users can culture pathogens and create a variety of medicines and vaccines to
 stay healthy.
 
 Plague Delight is still in the pre-release stage, so I plan to add way more
-functionality! Stay tuned.
-
-## Latest Release
-
-Forge:
-
-Modrinth:
+functionality! Stay tuned. Please report any bugs or features you would like
+added.
 
 ## Features
 
 Adds 10 new diseases.
-- Anthrax
-- Dysentery
-- Coronavirus
-- Malaria
-- Plague 
-- Rabies
-- Salmonella
-- Scarlet Fever
-- Smallpox
-- Swine Flu
+- Anthrax, from sheep and PVP
+- Dysentery, from drinking
+- Coronavirus, from bats and PVP
+- Malaria, from swimming in wet biomes
+- Plague, from villagers, pillagers, and PVP
+- Rabies, from dogs, cats, and bats
+- Salmonella, from chickens and eating
+- Scarlet Fever, from piglins
+- Smallpox, from cows, villagers, and PVP
+- Swine Flu, from pigs and PVP
 
 Adds 4 new medicines.
-- Antivirus
-- Infernicillin
-- Penicillin
-- Tonic 
+- Antivirus, halts symptoms of coronavirus, smallpox, and swine flu for 1
+  minute
+- Infernicillin, same as penicillin except it cures scarlet fever (30% chance)
+- Penicillin, cures anthrax, dysentery, plague, and salmonella (25% chance)
+- Tonic, cures malaria
 
 Adds disease culturing.
 
-Adds vaccines.
+Adds vaccines that grant immunity until you die.
 
 Advancements guide you through the mod.
 
