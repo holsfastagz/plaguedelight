@@ -15,6 +15,7 @@ import com.holsfastagz.plaguedelight.effect.SwineFluEffect;
 import com.holsfastagz.plaguedelight.effect.VaccinatedEffect;
 import com.holsfastagz.plaguedelight.effect.PenicillinEffect;
 import com.holsfastagz.plaguedelight.effect.InfernicillinEffect;
+import com.holsfastagz.plaguedelight.effect.TonicEffect;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -39,6 +40,11 @@ public class ModEffects {
     // Infernicillin effect
     public static final RegistryObject<MobEffect> INFERNICILLIN =
             EFFECTS.register("infernicillin", InfernicillinEffect::new);
+
+    // Infernicillin effect
+    public static final RegistryObject<MobEffect> TONIC =
+            EFFECTS.register("tonic", TonicEffect::new);
+
 
     // Vaccinated effect
     public static final RegistryObject<MobEffect> VACCINATED =
