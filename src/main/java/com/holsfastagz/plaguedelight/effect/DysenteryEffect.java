@@ -1,5 +1,7 @@
 package com.holsfastagz.plaguedelight.effect;
 
+import com.holsfastagz.plaguedelight.registry.ModEffects;
+
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffect;

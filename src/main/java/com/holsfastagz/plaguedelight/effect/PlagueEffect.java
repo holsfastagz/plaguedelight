@@ -1,5 +1,7 @@
 package com.holsfastagz.plaguedelight.effect;
 
+import com.holsfastagz.plaguedelight.registry.ModEffects;
+
 import com.holsfastagz.plaguedelight.registry.ModDamageTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffect;
