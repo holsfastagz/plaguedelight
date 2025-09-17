@@ -11,6 +11,14 @@ public class AnthraxEffect extends MobEffect {
         super(MobEffectCategory.HARMFUL, 0xF6BE00);
     }
 
+    @Override
+    public void applyEffectTick(LivingEntity entity, int amplifier) {
+         if (!entity.level().isClientSide) {
+             System.out.println("AnthraxEffect ticked for: " + entity.getName().getString());
+             //...rest of your code
+         }
+     }
+
     // Called every tick the effect is active
     @Override
     public void applyEffectTick(LivingEntity entity, int amplifier) {
