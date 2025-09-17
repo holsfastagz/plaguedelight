@@ -21,7 +21,7 @@ public class AnthraxEffect extends MobEffect {
 
     // Called every tick the effect is active
     @Override
-    public void applyEffectTick(LivingEntity entity, int amplifier) {
+    protected void applyEffectTick(LivingEntity entity, int amplifier) {
         if (!entity.level().isClientSide) {
 
             // Deal half a heart of damage per tick
