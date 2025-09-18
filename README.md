@@ -1,5 +1,7 @@
 # Plague Delight
-
+<a href="https://www.curseforge.com/minecraft/mc-mods/plague-delight">
+  <img src="http://cf.way2muchnoise.eu/full_398521_downloads.svg" alt="Curseforge Downloads">
+</a>
 <img src="src/main/resources/plaguedelight_logo.png" width="50%">
 
 Plague Delight is an addon mod for Farmer's Delight based around disease and
